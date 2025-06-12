@@ -33,16 +33,29 @@
       margin-bottom: 20px;
       color: #ccc;
     }
-    .screenshots {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    .screenshots{
+      width: 100%;display: flex;
+      justify-content: center;
+    }
+    .screenshots div{
+      display: inline-flex;
+      max-width: 900px;
       gap: 15px;
-      margin: 40px 0;
+      
+      overflow-y: auto;
+      padding-bottom: 6vh;
+      /* /* scrollbar-width: thin;  */
+      scrollbar-color:rgb(255, 255, 255) rgb(0, 0, 0); 
+      box-sizing: border-box;
+      max-height: 500px;
     }
     .screenshots img {
       width: 100%;
+      display: block; /* removes bottom whitespace from inline images */
+      margin-bottom: 10px;
       border: 2px solid #ff6f00;
       border-radius: 10px;
+      pointer-events: none;
     }
     .download {
       margin-top: 30px;
@@ -65,6 +78,11 @@
       font-size: 0.9rem;
       color: #aaa;
     }
+    @media screen and (max-width: 850px) {
+      .screenshots div{
+        scrollbar-color:transparent transparent;
+      }
+    }
   </style>
 </head>
 <body>
@@ -75,16 +93,18 @@
   </header>
 
   <div class="screenshots">
+    <div>
     <img src="Pr1.png" alt="Gameplay 1" />
     <img src="Pr2.png" alt="Gameplay 2" />
     <img src="Pr3.png" alt="Gameplay 3" />
     <img src="Pr4.png" alt="Gameplay 4" />
     <img src="Pr5.png" alt="Gameplay 5" />
     <img src="Pr6.png" alt="Gameplay 6" />
+    </div>
   </div>
 
   <div class="download">
-    <button onclick="alert('Coming Soon!')">Download Now</button>
+    <a href="https://github.com//taxonex/infinite/releases/download/v1.0.0/Infinitrek.apk"><button onclick="alert('Download...')">Download Now</button></a>
   </div>
 
   <footer>
