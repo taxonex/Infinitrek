@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>InfiniTrek</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfiniTrek - Infinite Runner Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom, #111, #222);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header img {
+      width: 150px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 10px;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin: 40px 0;
+    }
+    .screenshots img {
+      width: 100%;
+      border: 2px solid #ff6f00;
+      border-radius: 10px;
+    }
+    .download {
+      margin-top: 30px;
+    }
+    .download button {
+      background: #ff6f00;
+      color: #000;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .download button:hover {
+      background: #ff8500;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="infinitelogo.png" alt="InfiniTrek Logo" />
+    <h1>InfiniTrek</h1>
+    <p class="subtitle">Run forever in a futuristic world!</p>
+  </header>
 
-<h1>This is a InfiniTrek page</h1>
-<p>Under Development</p>
-  <h1>Coming Soon</h1>
+  <div class="screenshots">
+    <img src="Pr1.png" alt="Gameplay 1" />
+    <img src="Pr2.png" alt="Gameplay 2" />
+    <img src="Pr3.png" alt="Gameplay 3" />
+    <img src="Pr4.png" alt="Gameplay 4" />
+    <img src="Pr5.png" alt="Gameplay 5" />
+    <img src="Pr6.png" alt="Gameplay 6" />
+  </div>
 
+  <div class="download">
+    <button onclick="alert('Coming Soon!')">Download Now</button>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2025 InfiniTrek Game. All Rights Reserved. | 
+      Contact: gamprovision@gmail.com
+    </p>
+  </footer>
 </body>
 </html>
